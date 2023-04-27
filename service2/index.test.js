@@ -8,7 +8,7 @@ describe('GET /shopping', () => {
   });
 
   it('should return "Hello World Container" in the response body', async () => {
-    const res = await request(app).get('/');
+    const res = await request(app).get('/shopping');
     expect(res.text).toContain('Hello World Container');
   });
 });
