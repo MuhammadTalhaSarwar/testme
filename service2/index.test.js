@@ -3,7 +3,7 @@ const app = require('./index');
 
 describe('GET /shopping', () => {
   it('should return 200 OK', async () => {
-    const res = await request(app).get('/');
+    const res = await request(app).get('/shopping');
     expect(res.statusCode).toEqual(200);
   });
 
