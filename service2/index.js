@@ -12,3 +12,4 @@ const server = app.listen(port, () => {
   afterAll((done) => {
     server.close(done);
   });
+  module.exports=server;
