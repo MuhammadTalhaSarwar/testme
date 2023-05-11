@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('./index');
-
+const { afterAll } = require('@jest/globals');
 describe('GET /', () => {
   it('should return 200 OK', async () => {
     const res = await request(app).get('/');
@@ -12,3 +12,6 @@ describe('GET /', () => {
     expect(res.text).toContain('Hello World Container');
   });
 });
+afterAll((done) => {
+    app.close(done);
+  });

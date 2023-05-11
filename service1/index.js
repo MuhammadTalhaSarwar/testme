@@ -7,8 +7,5 @@ app.get('/',(req,res)=>{
 const server = app.listen(port, () => {
     console.log(`Server is running at port ${port}`);
   });
-  
-  afterAll((done) => {
-    server.close(done);
-  }); // listen to port 3000
+ // listen to port 3000
 module.exports=server;

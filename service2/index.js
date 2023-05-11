@@ -8,8 +8,4 @@ app.get('/shopping',(req,res)=>{
 const server = app.listen(port, () => {
     console.log(`Server is running at port ${port}`);
   });
-  
-  afterAll((done) => {
-    server.close(done);
-  });
   module.exports=server;
